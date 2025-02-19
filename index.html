@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fashion Footwear Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Fashion Footwear Finder</h1>
+        <nav>
+            <a href="login.html" target="_main">Login</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Search for shoes...">
+        <button onclick="searchProducts()">Search</button>
+    </header>
+
+    <main>
+
+        <div class="slider">
+            <div class="sliderWrapper">
+                <div class="sliderItem">
+                    <img src="./img/air.png" alt="Air Force" class="sliderImg">
+                    <div class="sliderBg"></div>
+                    <h1 class="sliderTitle">AIR FORCE<br> NEW<br> SEASON</h1>
+                    <h2 class="sliderPrice">1199</h2>
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                </div>
+                <div class="sliderItem">
+                    <img src="./img/jordan.png" alt="Air Jordan" class="sliderImg">
+                    <div class="sliderBg"></div>
+                    <h1 class="sliderTitle">AIR JORDAN<br> NEW<br> SEASON</h1>
+                    <h2 class="sliderPrice">1499</h2>
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                </div>
+                <div class="sliderItem">
+                    <img src="./img/blazer.png" alt="Blazer" class="sliderImg">
+                    <div class="sliderBg"></div>
+                    <h1 class="sliderTitle">BLAZER<br> NEW<br> SEASON</h1>
+                    <h2 class="sliderPrice">1099</h2>
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                </div>
+                <div class="sliderItem">
+                    <img src="./img/crater.png" alt="Crater" class="sliderImg">
+                    <div class="sliderBg"></div>
+                    <h1 class="sliderTitle">CRATER<br> NEW<br> SEASON</h1>
+                    <h2 class="sliderPrice">1299</h2>
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                </div>
+                <div class="sliderItem">
+                    <img src="./img/hippie.png" alt="Hippie" class="sliderImg">
+                    <div class="sliderBg"></div>
+                    <h1 class="sliderTitle">HIPPIE<br> NEW<br> SEASON</h1>
+                    <h2 class="sliderPrice">999</h2>
+                    <a href="#product">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="product-list">
+
+            <div class="product" data-name="Running Shoes">
+                <img src="images\running shoes 1.jpg" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <p>₹499.00</p>
+                
+                <button onclick="addToCart('Running Shoes', 49)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Running Shoes">
+                <img src="images\running shoes 2.jpg" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <p>₹599.00</p>
+                <button onclick="addToCart('Running Shoes', 59)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Running Shoes">
+                <img src="images\running shoes 3.jpg" alt="Running Shoes">
+                <h3>Running Shoe</h3>
+                <p>₹499.00</p>
+                <button onclick="addToCart('Running Shoes', 49)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Formal Shoes">
+                <img src="images\formal shoes 1.webp" alt="Formal Shoes">
+                <h3>Formal Shoes</h3>
+                <p>₹699.00</p>
+                <button onclick="addToCart('Formal Shoes', 69)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Formal Shoes">
+                <img src="images\formal shoes 2.webp" alt="Formal Shoes">
+                <h3>Formal Shoes</h3>
+                <p>₹599.00</p>
+                <button onclick="addToCart('Formal Shoes', 59)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Formal Shoes">
+                <img src="images\formal shoes 3.webp" alt="Running Shoes">
+                <h3>Formal Shoes</h3>
+                <p>₹499.00</p>
+                <button onclick="addToCart('Formal Shoes', 49)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="Formal Shoes">
+                <img src="images\running shoes 3.jpg" alt="Running Shoes">
+                <h3>Formal Shoes</h3>
+                <p>₹599.00</p>
+                <button onclick="addToCart('Formal Shoes', 59)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="sneakers shoes">
+                <img src="images\sneakers 1.png" alt="sneakers shoes">
+                <h3>sneakers shoes</h3>
+                <p>₹799.00</p>
+                <button onclick="addToCart('Formal Shoes', 79)">Add to Cart</button>
+            </div>
+
+            <div class="product" data-name="sneakers shoes">
+                <img src="images\sneakers 3.png" alt="sneakers shoes">
+                <h3>sneakers shoes</h3>
+                <p>₹899.00</p>
+                <button onclick="addToCart('Formal Shoes', 89)">Add to Cart</button>
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
